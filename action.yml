@@ -6,9 +6,9 @@ inputs:
     required: false
     default: ''
 outputs:
-  random-number:
+  nothing:
     description: "nothing"
-    value: ${{ steps.random-number-generator.outputs.random-id }}
+    value: 
 runs:
   using: "composite"
   steps:
