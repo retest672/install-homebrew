@@ -1,4 +1,4 @@
-name: 'Install Homebrew'
+name: 'Github Homebrew Installer'
 description: 'Install homebrew for your project'
 inputs:
   unneeded:  # id of input
