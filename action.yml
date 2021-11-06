@@ -1,0 +1,16 @@
+name: 'Install Homebrew'
+description: 'Install homebrew for your project'
+inputs:
+  unneeded:  # id of input
+    description: 'nothing'
+    required: false
+    default: ''
+outputs:
+  random-number:
+    description: "nothing"
+    value: 
+runs:
+  using: "composite"
+  steps:
+    - run: ${{ github.action_path }}/goodbye.sh
+      shell: bash
