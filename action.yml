@@ -8,9 +8,9 @@ inputs:
 outputs:
   random-number:
     description: "nothing"
-    value: 
+    value: ${{ steps.random-number-generator.outputs.random-id }}
 runs:
   using: "composite"
   steps:
-    - run: ${{ github.action_path }}/goodbye.sh
+    - run: ${{ github.action_path }}/install.sh
       shell: bash
